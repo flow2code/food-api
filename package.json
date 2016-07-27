@@ -1,0 +1,16 @@
+{
+  "name": "foodapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+	"sealious": "git://github.com/sealcode/sealious.git#829cb67c1b1b48f4f1b55e59845",
+	"sealious-channel-rest": "git://github.com/sealcode/sealious-channel-rest.git#subjects",
+	"sealious-www-server": "git://github.com/sealcode/sealious-www-server.git#references"
+  }
+}

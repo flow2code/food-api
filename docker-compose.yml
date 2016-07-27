@@ -1,0 +1,14 @@
+web:
+  image: "foodapi"
+  ports:
+    - "8080:8080"
+  volumes:
+    - .:/usr/src/app
+  links:
+    - mongo
+  command: node /usr/src/app
+      
+mongo:
+  image: "mongo:3.3"
+  volumes:
+    - ./mongo-data:/data/db
