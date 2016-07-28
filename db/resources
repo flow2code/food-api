@@ -1,0 +1,6 @@
+{"k":"0000000078","o":"0000000365","v":"001"}
+{"_id":2,"_uid":2,"_dt":1469702807149,"_s":"f53f397f34b14d8ae6442e3fd58791ef"}
+{"sealious_id":"vnd1jk3uxl","type":"places","body":{"name":"Kupa","address":"Gówniana 10","logo":{"id":"n0ixda6pw5","filename":"Screenshot from 2016-01-09 11-56-53.png"}},"created_context":{"timestamp":1469702807107,"ip":"172.17.0.1","user_id":null},"last_modified_context":{"timestamp":1469702807107,"ip":"172.17.0.1","user_id":null},"_id":{"$wrap":"$oid","v":2}}
+{"k":"0000000078","o":"0000000365","v":"001"}
+{"_id":3,"_uid":3,"_dt":1469705719537,"_s":"751b225f9edbca5c5ecd8d05e9fd32b9"}
+{"sealious_id":"7kfiba414r","type":"places","body":{"name":"Kupa","address":"Gówniana 10","logo":{"id":"ivdwtlnbg0","filename":"Screenshot from 2016-01-09 11-56-53.png"}},"created_context":{"timestamp":1469705719523,"ip":"172.17.0.1","user_id":null},"last_modified_context":{"timestamp":1469705719523,"ip":"172.17.0.1","user_id":null},"_id":{"$wrap":"$oid","v":3}}

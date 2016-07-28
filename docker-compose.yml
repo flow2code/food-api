@@ -6,7 +6,6 @@ web:
     - .:/usr/src/app
   links:
     - mongo
-  command: node /usr/src/app
       
 mongo:
   image: "mongo:3.3"

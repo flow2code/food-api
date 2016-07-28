@@ -10,19 +10,8 @@ var latlong = new Sealious.FieldType({
 	}
 });
 
-var restaurant = new Sealious.ResourceType({
-	name: "restaurants",
-	fields: [
-		{name: "name", type: "text", required: true},
-		{name: "address", type: "text", required: true},
-		{name: "location", type: "latlong", required: true}
-	],
-	access_strategy: {
-		create: "public",
-		delete: "noone",
-		update: "public",
-		retrieve: "public"
-	}
-});
+require("./src/field-types/photo.js");
+require("./src/field-types/url.js");
+require("./src/resource-types/places.js");
 
 Sealious.start();

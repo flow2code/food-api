@@ -7,14 +7,16 @@
     "build-docker": "docker build -t foodapi .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "docker-compose up -d  web mongo",
+    "stop": "docker-compose stop web mongo",
     "nodemon": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sealious": "git://github.com/sealcode/sealious.git#829cb67c1b1b48f4f1b55e59845",
+    "sealious": "git://github.com/sealcode/sealious.git#flow2code-fixes",
     "sealious-channel-rest": "git://github.com/sealcode/sealious-channel-rest.git#subjects",
-    "sealious-www-server": "git://github.com/sealcode/sealious-www-server.git#references"
+    "sealious-www-server": "git://github.com/sealcode/sealious-www-server.git#references",
+    "valid-url": "^1.0.9"
   },
   "devDependencies": {
     "browserify": "^13.1.0",
