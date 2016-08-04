@@ -8,18 +8,36 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "docker-compose up -d  web mongo",
     "stop": "docker-compose stop web mongo",
-    "nodemon": "nodemon index.js"
+    "nodemon": "nodemon index.js",
+    "front/start": "webpack-dev-server",
+    "front/build-dist": "webpack"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "classnames": "^2.2.5",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-webpack-plugin": "^2.22.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.6.1",
+    "redux": "^3.5.2",
     "sealious": "git://github.com/sealcode/sealious.git#flow2code-fixes",
     "sealious-channel-rest": "git://github.com/sealcode/sealious-channel-rest.git#subjects",
     "sealious-www-server": "git://github.com/sealcode/sealious-www-server.git#references",
-    "valid-url": "^1.0.9"
+    "valid-url": "^1.0.9",
+    "webpack": "^1.13.1"
   },
   "devDependencies": {
-    "browserify": "^13.1.0",
+    "css-loader": "^0.23.1",
+    "style-loader": "^0.13.1",
+    "react-hot-loader": "^1.3.0",
+    "webpack-dev-server": "^1.14.1",
     "nodemon": "^1.10.0",
     "watchify": "^3.7.0"
   }

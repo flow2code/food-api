@@ -1,0 +1,152 @@
+@import "normalize.css";
+
+html, body {
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	outline: none;
+}
+
+.wrap {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#header {
+	background: #333;
+	height: 50px;
+}
+
+#header-menu {
+	float: right;
+	line-height: 50px;
+}
+
+#header a {
+	text-decoration: none;
+}
+
+.header-link {
+	color: #bed763;
+	text-transform: uppercase;
+}
+
+#logo > a {
+	color: #eee;
+	font-weight: 600;
+	line-height: 50px;
+}
+
+#content {
+	position: relative;
+}
+
+#register::before {
+	background: url('https://s3.amazonaws.com/fg1-img/img/mi-sample-images/9.jpg') no-repeat left 50%;
+	background-size: 100% auto;
+	filter: contrast(30%);
+	-webkit-filter: contrast(30%);
+	position: absolute;
+	min-height: 100%;
+	width: 100%;
+	content: "";
+	display: block;
+}
+
+#register {
+	background: lightgray;
+	position: relative;
+}
+
+#register-form {
+	position: relative;
+	padding: 70px 0;
+}
+
+#register-form > form > div {
+	width: 250px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#register-form form {
+	text-align: center;
+}
+
+#register-form label {
+	position: absolute;
+	font-size: 13px;
+	color: #777;
+	top: 12px;
+	left: 0;
+}
+
+#register-form input {
+	border: 0 none;
+	padding: 30px 15px 10px;
+	display: block;
+	width: 100%;
+	margin: 0 0 20px -15px;
+	background: rgba(255,255,255,0.8);
+	transition: all 0.1s;
+	color: #555;
+	line-height: 26px;
+}
+
+#register-form input:focus {
+	background: #fff;
+}
+
+#register-form h2 {
+	color: #fff;
+	font-weight: 300;
+	font-size: 40px;
+	text-align: center;
+	margin: 0;
+	padding: 0 0 60px;
+}
+
+.form-button {
+	margin: 0 auto;
+	border: #bed763 2px solid;
+	color: #fff;
+	margin-top: 20px;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 15px;
+	cursor: pointer;
+	transition: all 0.1s;
+	background: none;
+}
+
+.form-button:hover, .form-button:focus {
+	background: #bed763;
+}
+
+#footer {
+	padding: 30px 0 20px;
+	text-align: center;
+}
+
+#footer a {
+	text-decoration: none;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #666;
+	margin: 0 20px 0;
+}
+
+#not-found {
+	font-weight: 300;
+	font-size: 50px;
+	text-align: center;
+	padding: 200px 0;
+}

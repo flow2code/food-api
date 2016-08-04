@@ -4,3 +4,21 @@
 {"k":"0000000078","o":"0000000365","v":"001"}
 {"_id":3,"_uid":3,"_dt":1469705719537,"_s":"751b225f9edbca5c5ecd8d05e9fd32b9"}
 {"sealious_id":"7kfiba414r","type":"places","body":{"name":"Kupa","address":"Gówniana 10","logo":{"id":"ivdwtlnbg0","filename":"Screenshot from 2016-01-09 11-56-53.png"}},"created_context":{"timestamp":1469705719523,"ip":"172.17.0.1","user_id":null},"last_modified_context":{"timestamp":1469705719523,"ip":"172.17.0.1","user_id":null},"_id":{"$wrap":"$oid","v":3}}
+{"k":"0000000078","o":"0000000339","v":"001"}
+{"_id":4,"_uid":4,"_dt":1469709530202,"_s":"7d843374ab9ce60ed550caa90f436c77"}
+{"sealious_id":"2asgqcwf9e","type":"places","body":{"name":"Doner","address":"Kebabowa 14/88","logo":{"id":"seld4qreim","filename":"images.jpe"}},"created_context":{"timestamp":1469709530133,"ip":"172.17.0.1","user_id":null},"last_modified_context":{"timestamp":1469709530133,"ip":"172.17.0.1","user_id":null},"_id":{"$wrap":"$oid","v":4}}
+{"k":"0000000078","o":"0000000407","v":"001"}
+{"_id":5,"_uid":5,"_dt":1469710551343,"_s":"4fb253e4be6d070e236180cef5f4b87d"}
+{"sealious_id":"g51y0e4deq","type":"user","body":{"username":"testowy","password":"59edf044670adaab48e6bfe1ef4e0222b95dbc7f513af09307acb82e5c9811dc84de95e2686123fb9cf708b428c5452a6c5a2018a64b7141e9c1a23f8c43814e"},"created_context":{"timestamp":1469710551297,"ip":"172.17.0.1","user_id":null},"last_modified_context":{"timestamp":1469710551297,"ip":"172.17.0.1","user_id":null},"_id":{"$wrap":"$oid","v":5}}
+{"k":"0000000078","o":"0000000407","v":"001"}
+{"_id":6,"_uid":6,"_dt":1469710594294,"_s":"84dcf03c4a427b38d5f202b59379ecd9"}
+{"sealious_id":"k5v5j2d1pv","type":"user","body":{"username":"johndoe","password":"59edf044670adaab48e6bfe1ef4e0222b95dbc7f513af09307acb82e5c9811dc84de95e2686123fb9cf708b428c5452a6c5a2018a64b7141e9c1a23f8c43814e"},"created_context":{"timestamp":1469710594257,"ip":"172.17.0.1","user_id":null},"last_modified_context":{"timestamp":1469710594257,"ip":"172.17.0.1","user_id":null},"_id":{"$wrap":"$oid","v":6}}
+{"k":"0000000078","o":"0000000431","v":"001"}
+{"_id":6,"_uid":6,"_dt":1469711929484,"_s":"3afcfdf3693c1aa8d8179bbcf122f1fa"}
+{"sealious_id":"k5v5j2d1pv","type":"user","body":{"username":"johndoe","password":"59edf044670adaab48e6bfe1ef4e0222b95dbc7f513af09307acb82e5c9811dc84de95e2686123fb9cf708b428c5452a6c5a2018a64b7141e9c1a23f8c43814e","last_login_context":{"timestamp":1469711929413,"ip":"172.17.0.1","user_id":null}},"created_context":{"timestamp":1469710594257,"ip":"172.17.0.1","user_id":null},"last_modified_context":{},"_id":{"$wrap":"$oid","v":6}}
+{"k":"0000000078","o":"0000000439","v":"001"}
+{"_id":6,"_uid":6,"_dt":1469712007552,"_s":"c7302f4e23373ac254f1ce8a2251e5c6"}
+{"sealious_id":"k5v5j2d1pv","type":"user","body":{"username":"johndoe","password":"59edf044670adaab48e6bfe1ef4e0222b95dbc7f513af09307acb82e5c9811dc84de95e2686123fb9cf708b428c5452a6c5a2018a64b7141e9c1a23f8c43814e","last_login_context":{"timestamp":1469712007503,"ip":"172.17.0.1","user_id":"k5v5j2d1pv"}},"created_context":{"timestamp":1469710594257,"ip":"172.17.0.1","user_id":null},"last_modified_context":{},"_id":{"$wrap":"$oid","v":6}}
+{"k":"0000000078","o":"0000000439","v":"001"}
+{"_id":6,"_uid":6,"_dt":1469712008629,"_s":"bdc9c98f7cab2bd305a2f294a3a954e3"}
+{"sealious_id":"k5v5j2d1pv","type":"user","body":{"username":"johndoe","password":"59edf044670adaab48e6bfe1ef4e0222b95dbc7f513af09307acb82e5c9811dc84de95e2686123fb9cf708b428c5452a6c5a2018a64b7141e9c1a23f8c43814e","last_login_context":{"timestamp":1469712008574,"ip":"172.17.0.1","user_id":"k5v5j2d1pv"}},"created_context":{"timestamp":1469710594257,"ip":"172.17.0.1","user_id":null},"last_modified_context":{},"_id":{"$wrap":"$oid","v":6}}
