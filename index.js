@@ -4,8 +4,7 @@ Sealious.init();
 
 var latlong = new Sealious.FieldType({
 	name: "latlong",
-	is_proper_value: function(context, params, value){
-		//logic;
+	is_proper_value: function(context, params, value) {
 		return Promise.resolve();
 	}
 });
