@@ -41,3 +41,4 @@ mongo-data
 db
 uploaded_files
 *~
+db/*
