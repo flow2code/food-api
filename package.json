@@ -27,6 +27,7 @@
     "react-redux": "^4.4.5",
     "react-router": "^2.6.1",
     "redux": "^3.5.2",
+    "redux-thunk": "^2.1.0",
     "sealious": "git://github.com/sealcode/sealious.git#flow2code-fixes",
     "sealious-channel-rest": "git://github.com/sealcode/sealious-channel-rest.git#subjects",
     "sealious-www-server": "git://github.com/sealcode/sealious-www-server.git#references",
