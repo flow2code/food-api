@@ -1,19 +1,43 @@
 import React from 'react';
 import cx from 'classnames';
 
-import Counter from './Counter';
+
+
+const FormRow = props =>
+	<div className="form-row">
+		<label htmlFor={props.name}>{props.label}</label>
+		<input type="text" id={props.name} ref={props.setRef(props.name)} />
+	</div>;
+
+const FormStep = props =>
+	<div className={cx('step', 'slide', {active: props.active})}>
+		<h2>{props.title}</h2>
+		{props.children}
+	</div>;
+
+const FormButton = props =>
+	<button type="submit" className="form-button">
+		{props.text}
+	</button>;
+
+
 
 export default React.createClass({
-
 	getInitialState: function() {
 		this.inputs = {};
 		return { step: 'start' };
 	},
 
-	next: function(ev) {
-		ev.preventDefault();
-		console.log(this.inputs);
+	next: function(e) {
+		e.preventDefault();
 		this.setState({ step: 'details' });
+		
+		setTimeout(() => this.inputs.email.focus(), 0);
+	},
+
+	register: function(e) {
+		e.preventDefault();
+		this.setState({ step: 'finish' });
 	},
 
 	render: function() {
@@ -22,44 +46,33 @@ export default React.createClass({
 		return (
 			<div id="register">
 				<div className="wrap" id="register-form">
-
-					<div className={cx('step', {active: this.state.step == 'start'})}>
-						<h2>Nagłówek zachęcający do zapisania</h2>
+					<FormStep title="Nagłówek zachęcający do zapisania" active={this.state.step == 'start'}>
 						<form onSubmit={this.next}>
-							<div className="form-row">
-								<label htmlFor="name">Nazwa restauracji</label>
-								<input type="text" id="name" ref={setRef('name')} />
-							</div>
-							<div className="form-row">
-								<label htmlFor="address">Adres restauracji</label>
-								<input type="text" id="address" ref={setRef('address')} />
-							</div>
-							<div className="form-row">
-								<label htmlFor="city">Miasto</label>
-								<input type="text" id="city" ref={setRef('city')} />
-							</div>
-							<button className="form-button" type="submit">Dalej</button>
+							<FormRow label="Nazwa restauracji" name="name" setRef={setRef} />
+							<FormRow label="Adres" name="address" setRef={setRef} />
+							<FormRow label="Miasto" name="city" setRef={setRef} />
+							<FormButton text="Dalej" />
 						</form>
-					</div>
+					</FormStep>
 
-					<div className={cx('step', 'slide', {active: this.state.step == 'details'})}>
-						<h2>Jeszcze parę szczegółów</h2>
-						<form>
-							<div className="form-row">
-								<label htmlFor="email">Adres e-mail</label>
-								<input type="text" id="email" ref={setRef('email')} />
-							</div>
-							<div className="form-row">
-								<label htmlFor="passwd">Hasło</label>
-								<input type="text" id="passwd" ref={setRef('passwd')} />
-							</div>
-							<button className="form-button" onClick={ (ev) => {this.setState({step:'start'});ev.preventDefault() }}>Zapisz mnie</button>
+					<FormStep title="Jeszcze parę szczegółów..." active={this.state.step == 'details'}>
+						<form onSubmit={this.register}>
+							<FormRow label="Adres e-mail" name="email" setRef={setRef} />
+							<FormRow label="Hasło" name="password" setRef={setRef} />
+							<FormRow label="Potwierdź hasło" name="confirm-password" setRef={setRef} />
+							<FormButton text="Zapisz mnie" />
 						</form>
-					</div>
+					</FormStep>
 
+					<FormStep title="Rejestracja pomyślna!" active={this.state.step == 'finish'}>
+						<ul>
+							{Object.keys(this.inputs).map((input, index) => 
+								<li key={index}>{input + ": " + this.inputs[input].value}</li>
+							)}
+						</ul>
+					</FormStep>
 				</div>
 			</div>
 		);
 	}
-
 });

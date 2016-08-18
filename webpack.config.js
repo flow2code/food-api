@@ -5,18 +5,25 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 let dev = {
-  entry: {
-    app: './src'
-  },
+  entry: [
+    'webpack-dev-server/client?http://localhost:9001',
+    'webpack/hot/only-dev-server',
+    'react-hot-loader/patch',
+    './src'
+  ],
   output: {
     publicPath: '/'
   },
   devServer: {
+    proxy: {
+      '/api*': {
+        target: 'http://lunchapi_back_1:8080'
+      }
+    },
     historyApiFallback: true,
     hot: true,
-    inline: true,
-    host: 'localhost',
-    port: '9001'
+    host: '0.0.0.0',
+    port: 9001
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -29,7 +36,7 @@ let dev = {
     loaders: [
       {
         test: /\.js$/,
-        loaders: ['react-hot', 'babel'],
+        loaders: ['babel'],
         include: path.join(__dirname, 'src')
       },
       {

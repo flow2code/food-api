@@ -24,6 +24,7 @@
     "html-webpack-plugin": "^2.22.0",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
+    "react-hot-loader": "^3.0.0-beta.2",
     "react-redux": "^4.4.5",
     "react-router": "^2.6.1",
     "redux": "^3.5.2",
@@ -32,7 +33,8 @@
     "sealious-channel-rest": "git://github.com/sealcode/sealious-channel-rest.git#subjects",
     "sealious-www-server": "git://github.com/sealcode/sealious-www-server.git#references",
     "valid-url": "^1.0.9",
-    "webpack": "^1.13.1"
+    "webpack": "^1.13.1",
+    "whatwg-fetch": "^1.0.0"
   },
   "devDependencies": {
     "css-loader": "^0.23.1",

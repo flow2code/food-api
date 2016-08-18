@@ -1,0 +1,15 @@
+#profile-header  {
+	padding: 20px 0 40px;
+}
+
+#profile-header h1 {
+	font-weight: 300;
+}
+
+.profile-place {
+	float: left;
+	background: lightgray;
+	margin: 0 20px 20px 0;
+	width: 200px;
+	padding: 20px;
+}

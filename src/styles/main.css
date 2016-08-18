@@ -19,6 +19,12 @@ body {
 	margin: 0 auto;
 }
 
+.clear::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
 #header {
 	background: #333;
 	height: 50px;
@@ -36,6 +42,7 @@ body {
 .header-link {
 	color: #bed763;
 	text-transform: uppercase;
+	margin-left: 20px;
 }
 
 #logo > a {
@@ -175,3 +182,5 @@ body {
 	height: 36px;
 	display: inline-block;
 }
+
+@import "profile.css";

@@ -1,12 +1,27 @@
-web:
-  image: "foodapi"
+back:
+  build: .
+  dockerfile: Dockerfile-back
   ports:
     - "8080:8080"
   volumes:
     - .:/usr/src/app
   links:
     - mongo
-      
+
+front:
+  build: .
+  dockerfile: Dockerfile-front
+  volumes:
+    - .:/usr/src/app
+  tty: true
+  ports:
+    - "9001:9001"
+  volumes_from:
+      - back
+  links:
+    - back
+
+
 mongo:
   image: "mongo:3.3"
   volumes:
