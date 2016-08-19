@@ -6,7 +6,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 let dev = {
   entry: [
-    'webpack-dev-server/client?http://localhost:9001',
+    'webpack-dev-server/client',
     'webpack/hot/only-dev-server',
     'react-hot-loader/patch',
     './src'
@@ -36,8 +36,12 @@ let dev = {
     loaders: [
       {
         test: /\.js$/,
-        loaders: ['babel'],
-        include: path.join(__dirname, 'src')
+        loader: 'babel',
+        include: path.join(__dirname, 'src'),
+        query: {
+          presets: ['react', 'es2015'],
+          "plugins": ["react-hot-loader/babel"]
+        }
       },
       {
         test: /\.css$/,
@@ -53,7 +57,7 @@ let dev = {
 let prod = {
   entry: {
     app: './src',
-    vendor: ['react', 'react-dom', 'react-router', 'redux']
+    vendor: ['react', 'react-dom', 'react-router', 'redux', 'react-redux']
   },
   output: {
     path: './dist',
@@ -82,8 +86,11 @@ let prod = {
     loaders: [
       {
         test: /\.js$/,
-        loaders: ['babel'],
-        include: path.join(__dirname, 'src')
+        loader: 'babel',
+        include: path.join(__dirname, 'src'),
+        query: {
+          presets: ['react', 'es2015']
+        }
       },
       {
         test: /\.css$/,
