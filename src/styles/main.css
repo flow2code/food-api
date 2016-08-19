@@ -156,6 +156,15 @@ body {
 	background: #bed763;
 }
 
+.form-button[disabled] {
+	opacity: 0.5;
+}
+
+.form-button[disabled]:hover {
+	background: none;
+}
+
+
 #footer {
 	padding: 30px 0 20px;
 	text-align: center;

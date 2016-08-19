@@ -16,7 +16,7 @@ export default (props) =>
 	<div id="header">
 		<div className="wrap">
 			<span id="logo">
-				<Link to="/">Lunch (?)</Link>
+				<Link to="/">Food API</Link>
 			</span>
 			<User />
 		</div>
