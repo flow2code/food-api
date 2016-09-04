@@ -19,7 +19,7 @@ front:
   volumes_from:
       - back
   links:
-    - back
+    - back:api
 
 
 mongo:

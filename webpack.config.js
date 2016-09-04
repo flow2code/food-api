@@ -18,7 +18,7 @@ let dev = {
   devServer: {
     proxy: {
       '/api*': {
-        target: 'http://lunchapi_back_1:8080'
+        target: 'http://api:8080'
       }
     },
     historyApiFallback: true,
