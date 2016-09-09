@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-docker": "docker build -t foodapi .",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "docker-compose up -d  web mongo",
-    "stop": "docker-compose stop web mongo",
+    "start": "docker-compose up -d",
+    "stop": "docker-compose stop",
+    "clean": "docker-compose down --rmi local",
     "nodemon": "nodemon index.js",
     "front/start": "webpack-dev-server",
     "front/build-dist": "webpack"

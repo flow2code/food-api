@@ -24,5 +24,6 @@ front:
 
 mongo:
   image: "mongo:3.3"
+  container_name: "foodapi_mongo"
   volumes:
     - ./mongo-data:/data/db
