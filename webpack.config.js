@@ -17,7 +17,7 @@ let dev = {
   },
   devServer: {
     proxy: {
-      '/api*': {
+      '/api': {
         target: 'http://api:8080'
       }
     },
